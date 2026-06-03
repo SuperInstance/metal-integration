@@ -2,6 +2,7 @@
 name = "metal-integration"
 version = "0.1.0"
 edition = "2021"
+description = "Integration tests proving all Rust metal libraries work together"
 
 [dependencies]
 conservation-spectral-topology = { git = "https://github.com/SuperInstance/conservation-spectral-topology-rs" }
@@ -11,3 +12,11 @@ spectral-graph-agent = { git = "https://github.com/SuperInstance/spectral-graph-
 ergodic-transport = { git = "https://github.com/SuperInstance/ergodic-transport-rs" }
 evolving-sheaf = { git = "https://github.com/SuperInstance/evolving-sheaf-rs" }
 serde_json = "1"
+
+[lib]
+name = "metal_integration"
+path = "src/lib.rs"
+
+[[test]]
+name = "compile_check"
+path = "tests/compile_check.rs"
