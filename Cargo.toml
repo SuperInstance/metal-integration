@@ -1,0 +1,13 @@
+[package]
+name = "metal-integration"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+conservation-spectral-topology = { git = "https://github.com/SuperInstance/conservation-spectral-topology-rs" }
+sheaf-agents = { git = "https://github.com/SuperInstance/sheaf-agents-rs" }
+hodge-belief = { git = "https://github.com/SuperInstance/hodge-belief-rs" }
+spectral-graph-agent = { git = "https://github.com/SuperInstance/spectral-graph-agent-rs" }
+ergodic-transport = { git = "https://github.com/SuperInstance/ergodic-transport-rs" }
+evolving-sheaf = { git = "https://github.com/SuperInstance/evolving-sheaf-rs" }
+serde_json = "1"
